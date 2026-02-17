@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(124, 214, 249);
+    color: rgb(0, 0, 0);
+    height: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 8px;
+}
+nav{
+    display: flex;
+    gap: 10px;  
+}
+p{
+    margin-right: 600px;
+    padding-left: 10px;
+}
+.maindiv a{
+    text-decoration: none;
+    margin-right: 80px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+/*header ends*/
+/*home page*/
+.c {
+    width: 300px;
+}
+.m{
+    height: 40px;
+}
+#in{
+    height: 30px;
+    width: 300px;
+}
+#inn{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+.hotelback{
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(22, 139, 186);
+}
+#maintext{
+    width: 100%;
+    height: 80px;
+    color: rgb(2, 12, 53);
+    font-weight: lighter;
+}
+#rm{
+    height: 400px;
+    width: 100%;
+}
+#i{
+    height: 188px;
+    width: 278px;
+    border-radius: 10px;
+}
+.one{
+    height: 380px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 228, 241);
+}
+.one:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+#three{
+    padding-left: 7px;
+}
+#five{
+    padding-left: 7px;
+}
+#ip{
+    padding-left: 7px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-spacing: 500px;
+}
+#imageSliderInner1{
+    height: 590px;
+}
+#rate{
+    padding: 4px;
+    background-color: gold;
+    border-color: gold;
+}
+s{
+    color: red;
+}
+#pi{
+    color: green;
+    padding-left: 7px;
+}
+#three{
+    color: rgb(19, 19, 139);
+}
+/*footer*/
+footer{
+    background-color: rgb(56, 162, 204);   
+    color: black;
+    padding: 30px 20px 20px;
+    text-align: left;
+    width: 100%;
+}
+.himain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.hi{
+    width: 100%;
+    margin-left: 2%;
+}
+.hi1{
+    margin-right: 32%;
+}
+.hi2{
+    margin-left: 5%;
+}
+.hi h4{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#co{
+    text-align: center;
+    margin-left: 425px;
+    margin-right: 445px;
+}
+#d{
+    color: blue;
+}
+.hi1 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+.hi1 a:hover{
+  transform: translateX(5px);
+  transition: 0.4s;
+  color: blue;
+}
+/*gallery*/
+#gbg{
+    width: 100%;
+}
+.gsubone{
+    text-align: center;
+    padding: 10px;
+}
+.photo-gal {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 10px;
+}
+.row-2 {
+      grid-template-columns: repeat(2, 1fr);
+}
+.row-3 {
+      grid-template-columns: repeat(3, 1fr);
+}
+.photo-gal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+#f{
+    height: 310px;
+}
+/*room*/
+#r{
+    text-align: center;
+    color: chocolate;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.room-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  padding: 12px;
+}
+.roomt {
+  background: rgb(193, 228, 241);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgb(39, 190, 250);
+  transition: transform 0.2s;
+}
+.roomt:hover {
+  transform: scale(1.04);
+}
+.roomt img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.roomtwo {
+  padding: 12px;
+}
+.roomtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bolder;
+}
+.roomprice {
+  color: rgb(18, 161, 18);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.book-btn {
+  display: inline-block;
+  padding: 7px 17px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.book-btn:hover {
+  background-color: #0a427e;
+}
+#pna{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: chocolate;
+}
+.newhot{
+    height: 230px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 7px rgb(39, 190, 250);
+}
+.accordion-collapse {
+    background-color: rgb(193, 228, 241);
+}
+.carousel-inner{
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+}
+.d-block {
+    border-radius: 10px;
+}
+/*roomends*/
+/*contact*/
+#cname {
+  text-align: center;
+  color: chocolate;
+  font-size: 35px;
+  margin-top: 30px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+.coct {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.vaseleft {
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(193, 228, 241);
+}
+.vaseleft h4 {
+  margin-bottom: 20px;
+  color: blue;
+}
+.vaseleft label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+.vaseleft input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.vaseleft:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+.vaseleft button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: chocolate;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.vaseleft button:hover {
+  background-color: #b35c17;
+}
+.vaseright {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.vaseright1,
+.vaseright2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ph {
+  width: 48%;
+  background-color: rgb(167, 221, 245);
+  padding: 15px;
+  border-radius: 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+.ph:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+#call {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+  margin-left: 16%;
+}
+#calln {
+  font-family: monospace;
+  margin-top: 5px;
+  text-align: center;
+  color: #555;
+}
+.phmap {
+  width: 100%;
+  margin-top: 10px;
+}
+.phmap iframe {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+#reg{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#bodybgnew{
+    background: linear-gradient(white, rgb(167, 221, 245));
+}
