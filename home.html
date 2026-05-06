@@ -12,7 +12,7 @@
     <header>
         <div class="maindiv">   
         <nav>
-            <p>DOORIN.Com</p>
+            <p class="logo-text">DOORIN.Com</p>
             <a href="home.html">Home</a>
             <a href="room.html">Room</a>
             <a href="gallery.html">Gallery</a>
@@ -20,19 +20,20 @@
         </nav>
     </header>
     <div id="maintext">
-        <h2 id="find">Find Your Next Stay</h2>
+        <h1 id="find">Find Your Next Stay</h1>
         <h4 id="loc">Search low prices on hotels, homes and much more...</h4> 
     </div>
-<div id="imageSliderUnique1" class="carousel slide">
+<div id="imageSliderUnique1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+  <div class="carousel-inner" id="imageSliderInner1">
   <div class="carousel-inner" id="imageSliderInner1">
     <div class="carousel-item active">
-      <img src="hoimages/hotelm.jpg" class="d-block w-100" alt="Hotel exterior">
+      <img src="hoimages/hotelm.jpg" class="d-block w-100 home-slide-img" alt="Hotel exterior">
     </div>
     <div class="carousel-item">
-      <img src="hoimages/room1.jpg" class="d-block w-100" alt="Room interior">
+      <img src="hoimages/room1.jpg" class="d-block w-100 home-slide-img" alt="Room interior">
     </div>
     <div class="carousel-item">
-      <img src="hoimages/resort.jpg" class="d-block w-100" alt="Resort view">
+      <img src="hoimages/resort.jpg" class="d-block w-100 home-slide-img" alt="Resort view">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#imageSliderUnique1" data-bs-slide="prev">
@@ -66,56 +67,113 @@
         <br><h3 id="de">Deals For The Weekend</h3>
         <h6>Save on stays for 20 July-25 July</h6>
     </div>
-    <div class="box">
+    <!-- <div class="box">
             <div class="one">
-                <img id="i" src="hoimages/room1.jpg">
-                <h3 id="three">Lake Suites</h3>
+                <img class="room-img" src="hoimages/room1.jpg">
+                <h3 class="three">Lake Suites</h3>
                 <h5 id="five">Kolkata, India</h5>
                 <pre id="ip"><button id="rate">4.5</button> Superb<br>      495 ratings</pre>
                 <pre id="pi">Price:<s>7500</s> 5800/2 nights</pre>
             </div>
             <div class="one">
-                <img id="i" src="hoimages/room3.jpg"><br>
-                <h3 id="three">Ganga Guest House</h3>
+                <img class="room-img" src="hoimages/room3.jpg"><br>
+                <h3 class="three">Ganga Guest House</h3>
                 <h5 id="five">Varanasi, India</h5>
                 <pre id="ip"><button id="rate">4.0</button> Very Good<br>      204 ratings</pre>
                 <pre id="pi">Price:<s>4500</s> 2300/2 nights</pre>
             </div>
             <div class="one">
-                <img id="i" src="hoimages/room2.jpg">
-                <h3 id="three">Veera Palace</h3>
+                <img class="room-img" src="hoimages/room2.jpg">
+                <h3 class="three">Veera Palace</h3>
                 <h5 id="five">Ranchi, India</h5>
                 <pre id="ip"><button id="rate">3.6</button> Good<br>      175 ratings</pre>
                 <pre id="pi">Price:<s>3500</s> 2000/2 nights</pre>
             </div>
             <div class="one">
-                <img id="i" src="hoimages/room5.jpg">
-                <h3 id="three">Royal Ginger</h3>
+                <img class="room-img" src="hoimages/room5.jpg">
+                <h3 class="three">Royal Ginger</h3>
                 <h5 id="five">Bangalore, India</h5>
                 <pre id="ip"><button id="rate">4.9</button> Superb<br>      538 ratings</pre>
                 <pre id="pi">Price:<s>8500</s> 7400/2 nights</pre>
             </div>
+    </div> -->
+    <div class="box">
+    <div class="one">
+        <img class="room-img" src="hoimages/room1.jpg">
+        <h3 class="three">Lake Suites</h3>
+        <h5 id="five">Kolkata, India</h5>
+
+        <div id="ip">
+            <button id="rate">4.5</button>
+            <span>Superb</span>
+            <p>495 ratings</p>
+        </div>
+
+        <p id="pi">Price: <s>7500</s> 5800/2 nights</p>
     </div>
+
+    <div class="one">
+        <img class="room-img" src="hoimages/room3.jpg">
+        <h3 class="three">Ganga Guest House</h3>
+        <h5 id="five">Varanasi, India</h5>
+
+        <div id="ip">
+            <button id="rate">4.0</button>
+            <span>Very Good</span>
+            <p>204 ratings</p>
+        </div>
+
+        <p id="pi">Price: <s>4500</s> 2300/2 nights</p>
+    </div>
+
+    <div class="one">
+        <img class="room-img" src="hoimages/room2.jpg">
+        <h3 class="three">Veera Palace</h3>
+        <h5 id="five">Ranchi, India</h5>
+
+        <div id="ip">
+            <button id="rate">3.6</button>
+            <span>Good</span>
+            <p>175 ratings</p>
+        </div>
+
+        <p id="pi">Price: <s>3500</s> 2000/2 nights</p>
+    </div>
+
+    <div class="one">
+        <img class="room-img" src="hoimages/room5.jpg">
+        <h3 class="three">Royal Ginger</h3>
+        <h5 id="five">Bangalore, India</h5>
+
+        <div id="ip">
+            <button id="rate">4.9</button>
+            <span>Superb</span>
+            <p>538 ratings</p>
+        </div>
+
+        <p id="pi">Price: <s>8500</s> 7400/2 nights</p>
+    </div>
+</div>
     </div>
     <div class="m"></div>
    <footer>
       <div class="himain">
       <div class="hi">
-      <h4 id="d">DOORIN.com</h4>
+      <h4 class="heading-text">DOORIN.com</h4>
       <pre id="foopara">DOORIN.com is part of booking<br>holidays Inc.,the world leader in<br>online travel services</pre>
       </div>
       <div class="hi1">
-        <h4 id="d">Our Store</h4>
-        <a href="home.html">>Home</a>
-        <a href="room.html">>Rooms</a>
-        <a href="gallery.html">>Gallery</a>
-        <a href="contact.html">>Contact</a>
+        <h4 class="heading-text">Our Store</h4>
+        <a href="home.html">Home</a>
+        <a href="room.html">Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
       </div>
       <div class="hi2">
-      <h4 id="d">Get in Touch</h3>
-      <a class="ok" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg" style="color: #d8228c;"></i></a>
-      <a class="ok" href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter fa-lg" style="color: #e5e5eb;"></i></a>
-      <a class="ok" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-lg" style="color: #0f7216;"></i></a><br><br>
+      <h4 class="heading-text">Get in Touch</h4>
+      <a class="ok" href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram fa-lg" style="color: #d8228c;"></i></a>
+      <a class="ok" href="https://x.com/?lang=en" title="Twitter"><i class="fa-brands fa-x-twitter fa-lg" style="color: #e5e5eb;"></i></a>
+      <a class="ok" href="https://www.whatsapp.com/" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-lg" style="color: #0f7216;"></i></a><br><br>
         <pre>Terms & Conditions</pre>
         <pre>Help Center</pre>        
       </div>
