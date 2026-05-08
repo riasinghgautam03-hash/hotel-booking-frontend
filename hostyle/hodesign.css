@@ -203,6 +203,22 @@ s{
 .deals h6{
   margin-bottom:20px;
 }
+.book-btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: #c59d5f;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.book-btn:hover {
+    background-color: black;
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
 /*footer strt*/
 footer{
   background:linear-gradient(to right,rgb(56,162,204),rgb(98,196,235));
@@ -297,10 +313,33 @@ footer{
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
-
 .foot-text:hover{
   transform: translateX(5px);
   color: rgb(25, 81, 172);
+}
+.nav-link-custom{
+  position: relative;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-link-custom::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #c59d5f;
+  transition: 0.3s;
+}
+.nav-link-custom:hover::after{
+  width: 100%;
+}
+.nav-link-custom.active{
+  color: #4118ac !important;
+}
+.nav-link-custom.active::after{
+  width: 100%;
 }
 /*gallery strt*/
 #gbg{
@@ -339,6 +378,17 @@ footer{
 }
 #f{
   height: 310px;
+}
+.gallery-item{
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-image{
+  width: 100%;
+  transition: 0.4s;
+}
+.gallery-image:hover{
+  transform: scale(1.08);
 }
 /*room strt*/
 #r{
@@ -436,6 +486,17 @@ footer{
 }
 /*roomends*/
 /*contact strt*/
+.error-border {
+    border: 2px solid red !important;
+}
+.success-border {
+    border: 2px solid green !important;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
 #cname {
   text-align: center;
   color: rgb(15, 34, 177);

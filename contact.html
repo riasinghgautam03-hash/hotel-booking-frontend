@@ -17,17 +17,17 @@
                     <span></span><span></span><span></span>
                 </button>
                 <div class="nav-links" id="navLinks">
-                    <a href="home.html">Home</a>
-                    <a href="room.html">Room</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="home.html" class="nav-link-custom">Home</a>
+                    <a href="room.html" class="nav-link-custom">Room</a>
+                    <a href="gallery.html" class="nav-link-custom">Gallery</a>
+                    <a href="contact.html" class="nav-link-custom">Contact</a>
                 </div>
             </nav>
     </header>
     <h2 id="cname">CONTACT</h2>
   <div class="coct">
     <div class="vaseleft">
-      <form>
+      <form id="contactForm">
         <h4 id="reg">REGISTRATION FORM</h4>
         <label for="name">Name:</label>
         <input id="name" type="text" placeholder="Enter your name" required />
@@ -99,11 +99,6 @@
       <hr><p id="co">Copyright&copy;2025 DOORIN </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script>
-        function toggleNav() {
-            var nav = document.getElementById('navLinks');
-            nav.classList.toggle('open');
-        }
-    </script> 
+    <script src="script.js" defer></script> 
 </body>
 </html>
