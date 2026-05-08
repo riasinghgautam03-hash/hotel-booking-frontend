@@ -20,13 +20,24 @@ header{
 }
 nav{
     display:flex;
-    gap:50px;
+    gap:0;
     align-items:center;
     flex-wrap:wrap;
     margin-top:-5px;
+    width:100%;
+}
+.maindiv{
+    width:100%;
+}
+.nav-links{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    margin-left:auto;
+    padding-right:30px;
 }
 .logo-text{
-   margin-right:600px;
+   margin-right:auto;
    padding-left:25px;
    font-size:24px;
    font-weight:bold;
@@ -219,22 +230,39 @@ footer{
 }
 .hi1 a{
     width:fit-content;
+    display:block;
 }
 .hi h4{
     margin-bottom: 15px;
     font-size: 18px;
+}
+#foopara:hover{
+    color:rgb(25, 81, 172);
+    transform:scale(1.03);
+    transition:0.3s ease;
+
 }
 #co{
     text-align:center;
     margin-top:20px;
     font-size:15px;
     letter-spacing:1px;
+    transition:0.3s ease;
+}
+#co:hover{
+    transform:scale(1.03);
+    color:rgb(25, 81, 172);
 }
 .heading-text{
     color:rgb(12,50,122);
     margin-bottom:18px;
     font-size:22px;
     font-weight:bold;
+}
+.heading-text:hover{
+    color:rgb(124, 19, 154);
+    transform: scale(1.05);
+    transition: 0.5s ease;
 }
 .hi .heading-text{
     font-size:23px;
@@ -253,11 +281,26 @@ footer{
 }
 .hi1 a:hover{
   transform:translateX(6px);
-  color:rgb(11,53,148);
+  color:rgb(25, 81, 172);
 }
 .ok{
-    margin-right:15px;
-    font-size:20px;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+.ok:hover{
+    transform: scale(1.2);
+}
+.foot-text{
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.foot-text:hover{
+    transform: translateX(5px);
+    color: rgb(25, 81, 172);
 }
 /*gallery strt*/
 #gbg{
@@ -509,10 +552,449 @@ footer{
     font-weight: bold;
 }
 #bodybgnew{
-    background: linear-gradient(white, rgb(167, 221, 245));
+    background: linear-gradient(to bottom, white, rgb(167, 221, 245));
+    min-height: 100vh;
 }
 /* only adding for img */
 img{
    max-width:100%;
    height:auto;
+}
+
+/* ============================================================
+   MEDIA QUERIES - Responsive Design for DOORIN Hotel Booking
+   Breakpoints:
+     Tablet    : max-width 1024px
+     Small Tab : max-width 768px
+     Mobile    : max-width 480px
+   ============================================================ */
+
+/* ---- TABLET (max-width: 1024px) ---- */
+@media (max-width: 1024px) {
+
+  /* Header & Nav */
+  .logo-text {
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  nav {
+    gap: 25px;
+  }
+
+  /* Footer */
+  .himain {
+    gap: 50px;
+    padding: 10px 20px;
+  }
+
+  /* Room grid: 2 columns on tablet */
+  .room-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FIX 4: Room card text centered when grid goes to 2 cols */
+  .roomtwo {
+    text-align: center;
+  }
+
+  /* Home hotel cards */
+  .box {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* Contact layout */
+  .vaseright {
+    width: 420px;
+  }
+
+  /* Gallery padding */
+  .photo-row {
+    padding: 15px 20px;
+  }
+
+  /* FIX 5: Remove extra white space at bottom of contact page */
+  #bodybgnew {
+    min-height: 100vh;
+    background: linear-gradient(white, rgb(167, 221, 245));
+    background-attachment: fixed;
+  }
+}
+
+
+/* ---- SMALL TABLET / LARGE MOBILE (max-width: 768px) ---- */
+@media (max-width: 768px) {
+
+  /* ---- HEADER ---- */
+  header {
+    height: auto;
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .logo-text {
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 22px;
+  }
+  .maindiv a {
+    font-size: 16px;
+  }
+  ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* ---- HOME PAGE ---- */
+  #maintext {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #find {
+    font-size: 26px;
+  }
+  #loc {
+    font-size: 17px;
+  }
+
+  /* Search bar stacking */
+  .hotelback {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+  .c, #in {
+    width: 100%;
+  }
+  #inn {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  /* Hero Slider */
+  .home-slide-img {
+    height: 280px;
+  }
+  #imageSliderInner1 {
+    height: 280px;
+  }
+
+  /* Deal cards */
+  .box {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .one {
+    width: 90%;
+    max-width: 380px;
+  }
+  .room-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* FIX 2: Deals heading centered when stacked */
+  .deals {
+    padding-left: 0;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  /* ---- FOOTER ---- */
+  /* FIX 1: Footer content centered when stacked vertically */
+  .himain {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  .hi, .hi1, .hi2 {
+    width: 100%;
+    text-align: center;
+  }
+  /* Center footer links */
+  .hi1 a {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hi1 a:hover {
+    transform: none;
+  }
+
+  /* ---- GALLERY PAGE ---- */
+  .gsubone {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  .photo-row {
+    padding: 10px 15px;
+  }
+  /* Stack all gallery rows to single column */
+  .photo-gal.row-2,
+  .photo-gal.row-3 {
+    grid-template-columns: 1fr;
+  }
+  #f {
+    height: auto;
+  }
+
+  /* ---- ROOM PAGE ---- */
+  #r {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #pna {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* Property type cards (Hotels, Villas etc.) */
+  .box .one.newhot {
+    width: 90%;
+    max-width: 400px;
+  }
+  /* Room grid: 2 columns on small tablet */
+  .room-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+  /* FIX 4: Room card text centered */
+  .roomtwo {
+    text-align: center;
+  }
+
+  /* ---- CONTACT PAGE ---- */
+  .coct {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 25px;
+  }
+  .vaseleft {
+    width: 90%;
+    max-width: 420px;
+  }
+  .vaseright {
+    width: 90%;
+    max-width: 420px;
+  }
+  .vaseright1,
+  .vaseright2 {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .ph {
+    width: 48%;
+  }
+  .phmap iframe {
+    height: 180px;
+  }
+}
+
+
+/* ---- MOBILE (max-width: 480px) ---- */
+@media (max-width: 480px) {
+
+  /* ---- HEADER ---- */
+  header {
+    padding: 8px 12px;
+  }
+  .logo-text {
+    font-size: 19px;
+  }
+  .maindiv a {
+    font-size: 15px;
+  }
+  nav {
+    gap: 8px;
+  }
+
+  /* ---- HOME PAGE ---- */
+  #find {
+    font-size: 22px;
+  }
+  #loc {
+    font-size: 15px;
+  }
+  #maintext {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .home-slide-img {
+    height: 210px;
+  }
+  #imageSliderInner1 {
+    height: 210px;
+  }
+  .hotelback {
+    padding: 12px;
+    gap: 8px;
+  }
+  .c, #in {
+    width: 100%;
+  }
+  #inn {
+    width: 100%;
+  }
+  .one {
+    width: 95%;
+  }
+  .room-img {
+    height: 180px;
+  }
+
+  /* FIX 2: Deals heading centered on mobile too */
+  .deals {
+    padding-left: 0;
+    text-align: center;
+    padding: 8px 15px;
+  }
+  .deals h3 {
+    font-size: 18px;
+  }
+
+  /* ---- GALLERY PAGE ---- */
+  .gsubone {
+    font-size: 24px;
+    letter-spacing: 0;
+    padding-top: 15px;
+  }
+  .photo-gal.row-2,
+  .photo-gal.row-3 {
+    grid-template-columns: 1fr;
+  }
+  .photo-row {
+    padding: 8px 10px;
+  }
+
+  /* ---- ROOM PAGE ---- */
+  #r {
+    font-size: 24px;
+  }
+  #pna {
+    font-size: 22px;
+  }
+  /* Room grid: 1 column on mobile */
+  .room-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 8px;
+  }
+  .roomt img {
+    height: 180px;
+  }
+  /* FIX 4: Room card text centered on single column */
+  .roomtwo {
+    text-align: center;
+  }
+  .box .one.newhot {
+    width: 95%;
+  }
+
+  /* ---- CONTACT PAGE ---- */
+  .vaseleft {
+    width: 95%;
+  }
+  .vaseright {
+    width: 95%;
+  }
+  .vaseright1,
+  .vaseright2 {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ph {
+    width: 100%;
+  }
+  #cname {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .phmap iframe {
+    height: 160px;
+  }
+
+  /* ---- FOOTER ---- */
+  /* FIX 1: Footer centered on mobile */
+  .himain {
+    gap: 20px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .hi, .hi1, .hi2 {
+    text-align: center;
+  }
+  .hi1 a {
+    text-align: center;
+  }
+  .hi h4,
+  .heading-text {
+    font-size: 17px;
+  }
+  #co {
+    font-size: 13px;
+  }
+}
+
+/* ---- HAMBURGER MENU (mobile nav toggle) ---- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(7, 42, 122);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  header {
+    position: relative;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  /* Reset logo margin for mobile */
+  .logo-text {
+    margin-right: 0;
+  }
 }

@@ -12,12 +12,17 @@
     <header>
         <div class="maindiv">
         <nav>
-            <p class="logo-text">DOORIN.Com</p>
-            <a href="home.html">Home</a>
-            <a href="room.html">Room</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+                <p class="logo-text">DOORIN.Com</p>
+                <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="home.html">Home</a>
+                    <a href="room.html">Room</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
     </header>
 <h2 class="gsubone">OUR GALLERY</h2>
 <div class="photo-row row-2">
@@ -59,12 +64,18 @@
       <a class="ok" href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram fa-lg" style="color: #d8228c;"></i></a>
       <a class="ok" href="https://x.com/?lang=en" title="Twitter"><i class="fa-brands fa-x-twitter fa-lg" style="color: #e5e5eb;"></i></a>
       <a class="ok" href="https://www.whatsapp.com/" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-lg" style="color: #0f7216;"></i></a><br><br>
-        <pre>Terms & Conditions</pre>
-        <pre>Help Center</pre>        
+        <pre class="foot-text">Terms & Conditions</pre>
+        <pre class="foot-text">Help Center</pre>        
       </div>
       </div>
       <hr><p id="co">Copyright&copy;2025 DOORIN </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById('navLinks');
+            nav.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
